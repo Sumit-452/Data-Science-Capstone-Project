@@ -2,4 +2,6 @@ import pickle
 
 import streamlit as st
 
-model = pickle.load(open('best_pickle.pkl',rb'))
+model = pickle.load(open('best_pickle.pkl','rb'))
+                         
+st.title(car prediction model)
