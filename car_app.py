@@ -1,12 +1,13 @@
 import pickle
-
+import pandas as pd
 import streamlit as st
 
 
 st.title('car prediction model')
 transmission = st.radio("Select Transmission: ", ('Automatic', 'Manual'))
 
-
+year = st.text_input("Enter Year", "...")
+km = st.text_input("Enter km driven", "Type Here ...")
 owner = st.selectbox("owner: ",
                      ['First Owner','Second Owner','Third Owner','Fourth & Above Owner','Test Drive Car'])
                          
@@ -19,3 +20,8 @@ seller_type = st.radio("select seller type: ",
 
 fuel = st.selectbox("fuel: ",
                      ['Diesel','Petrol','CNG','LPG','Electric'])
+
+
+test=pd.DataFrame({'transmission':transmission})
+
+model = pickle.load(open('best_model.pkl','rb'))
