@@ -6,8 +6,8 @@ import streamlit as st
 st.title('car prediction model')
 
 
-year = st.text_input("Enter Year", "...")
-km = st.text_input("Enter km driven", "Type Here ...")
+year = st.text_input("Enter Year")
+km = st.text_input("Enter km driven")
 
 transmission = st.radio("Select Transmission: ", ('Automatic', 'Manual'))
 
