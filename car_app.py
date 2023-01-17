@@ -25,6 +25,6 @@ fuel = st.selectbox("fuel: ",
                      ['Diesel','Petrol','CNG','LPG','Electric'])
 
 
-test=pd.DataFrame({'transmission':transmission})
+#test=pd.DataFrame({'transmission':transmission})
 
 model = pickle.load(open('best_model.pkl','rb'))
