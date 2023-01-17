@@ -114,7 +114,7 @@ else:
   
 
 
-
 model = pickle.load(open('best_model.pkl','rb'))
-
-st.success(model.predict(num))
+if(st.button('Submit')):
+    result = model.predict(n)
+    st.success(result)
