@@ -11,6 +11,7 @@ n=np.zeros([1,34],dtype=int)
 #taking input and storing data
 
 km = st.text_input("Enter km driven")
+st.success(km)
 n[0,0]=km
 
 
