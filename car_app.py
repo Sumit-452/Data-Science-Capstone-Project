@@ -4,10 +4,13 @@ import streamlit as st
 
 
 st.title('car prediction model')
-transmission = st.radio("Select Transmission: ", ('Automatic', 'Manual'))
+
 
 year = st.text_input("Enter Year", "...")
 km = st.text_input("Enter km driven", "Type Here ...")
+
+transmission = st.radio("Select Transmission: ", ('Automatic', 'Manual'))
+
 owner = st.selectbox("owner: ",
                      ['First Owner','Second Owner','Third Owner','Fourth & Above Owner','Test Drive Car'])
                          
