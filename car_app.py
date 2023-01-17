@@ -10,11 +10,11 @@ n=np.zeros([1,34],dtype=int)
 
 #taking input and storing data
 
-km = int(st.text_input("Enter km driven"))
+km = st.text_input("Enter km driven")
 n[0,0]=km
 
 
-year = int(st.text_input("Enter Year"))
+year = st.text_input("Enter Year")
 n[0,1]=year
 
 
