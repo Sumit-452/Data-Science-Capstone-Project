@@ -3,6 +3,7 @@
 import pickle
 import pandas as pd
 import streamlit as st
+import numpy as np
 
 st.title('car prediction model')
 n=np.zeros([1,34],dtype=int)
