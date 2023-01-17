@@ -10,7 +10,7 @@ n=np.zeros([1,34],dtype=int)
 
 #taking input and storing data
 
-km = st.slider("Enter km driven",1,25000000)
+km = st.slider("Enter km driven",1,250000)
 n[0,0]=km
 
 
