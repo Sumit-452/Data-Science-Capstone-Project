@@ -37,9 +37,9 @@ else:
 #for seller type
 s_t = st.radio("select seller type: ",
                      ('Individual','Dealer','Trustmark Dealer'))
-if s_t='Dealer':
+if s_t=='Dealer':
   n[0,7]=1
-elif s_t='Individual':
+elif s_t=='Individual':
   n[0,8]=1
 else:
   n[0,9]=1
