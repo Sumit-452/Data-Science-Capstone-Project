@@ -65,7 +65,7 @@ else:
 tran = st.radio("Select Transmission: ", ('Automatic', 'Manual'))
 
 
-elif tran=='Automatic':
+if tran=='Automatic':
   n[0,15]=1
 else:
   n[0,16]=1
