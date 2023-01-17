@@ -10,11 +10,11 @@ n=np.zeros([1,34],dtype=int)
 
 #taking input and storing data
 
-km = st.text_input("Enter km driven")
+km = st.slider("Enter km driven",1,25000000)
 n[0,0]=km
 
 
-year = st.text_input("Enter Year")
+year = st.slider("Enter Year",1,25)
 n[0,1]=year
 
 
