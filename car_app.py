@@ -111,7 +111,7 @@ else:
   n[0,33]=1
 
   
-
+st.text("predicting the selling price")
 
 model = pickle.load(open('best_model.pkl','rb'))
 if(st.button('Submit')):
