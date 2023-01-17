@@ -11,11 +11,11 @@ n=np.zeros([1,34],dtype=int)
 #taking input and storing data
 
 km = st.text_input("Enter km driven")
-n[0,0]=km
+n[0,0]=int(km)
 
 
 year = st.text_input("Enter Year")
-n[0,1]=year
+n[0,1]=int(year)
 
 
 #for fuel
