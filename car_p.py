@@ -9,6 +9,11 @@ df['manufacturer']=lst
 
 
 #deleting uncessary rows and columns
+d1=df['manufacturer'].value_counts()
+w=d1[d1.values<10].index
+q=list(w)
+q
+
 for i in q:
     w=df[df['manufacturer']==i].index
     for j in list(w):
@@ -40,4 +45,4 @@ ad.fit(xmm,y)
 
 #model saving
 import pickle
-pickle.dump(ad,open('adaboost.pkl','wb'))
+pickle.dump(ad,open('best_model.pkl','wb'))
