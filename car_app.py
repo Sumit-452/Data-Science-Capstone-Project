@@ -2,8 +2,6 @@ import pickle
 
 import streamlit as st
 
-year=
-
 Trans = st.radio("Select Transmission: ", ('Automatic', 'Manual'))
 #model = pickle.load(open('best_model.pkl','rb'))
 
