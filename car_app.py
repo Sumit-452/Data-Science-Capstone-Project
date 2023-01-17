@@ -1,7 +1,7 @@
 import pickle
 import pandas as pd
 import streamlit as st
-
+from sklearn import *
 
 st.title('car prediction model')
 
