@@ -6,7 +6,24 @@ import numpy as np
 
 st.sidebar.title('model selection')
 
-option=st.sidebar.radio('Select the ML model which you want to use',['AdaBoost'])
+option=st.sidebar.radio('Select the ML model which you want to use',['AdaBoost Regressor','Random Forest Regressor','Bagging Regressor','AdaBoost Regressor 2'])
+
+#importing models
+ada_model = pickle.load(open('adadt.pkl','rb'))
+rf_model = pickle.load(open('adadt.pkl','rb'))
+bg_model = pickle.load(open('adadt.pkl','rb'))
+adt_model = pickle.load(open('adadt.pkl','rb'))
+
+if option=='AdaBoost Regressor':
+  model=adt_model
+elif option=='AdaBoost Regressor 2':
+  model=ada_model
+elif option=='Bagging Regressor':
+  model=bg_model
+else:
+  model=rf_model
+
+
 
 st.title('CAR SELLING PRICE PREDICTION')
 n=np.zeros([1,34],dtype=int)
@@ -118,9 +135,7 @@ else:
 data=pd.DataFrame(n)
   
   
-ada_model = pickle.load(open('best_model.pkl','rb'))
-if option=='AdaBoost':
-  model=ada_model
+
 if(st.button('Submit')):
   result = model.predict(data)
   st.text("estimate selling price is :")
