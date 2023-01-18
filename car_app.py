@@ -18,7 +18,7 @@ km = st.slider("Enter total kilometer driven",0,1000000,)
 n[0,0]=km
 
 
-year = st.slider("Select Year(old)",1.0,30.0,step=0.25)
+year = st.slider("Select Year(old)",0.0,30.0,step=0.25)
 n[0,1]=year
 
 
