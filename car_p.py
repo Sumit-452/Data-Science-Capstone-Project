@@ -19,7 +19,10 @@ for i in q:
     for j in list(w):
       df.drop(j,inplace=True)
 df.drop_duplicates(inplace=True)
-df.drop(columns=['name'],axis=1,inplace=True)
+
+df['years_old']=2023-df['year']
+df['years_old']
+df.drop(columns=['name','year'],axis=1,inplace=True)
 
 
 
