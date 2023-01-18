@@ -9,9 +9,9 @@ st.sidebar.title('model selection')
 option=st.sidebar.radio('Select the ML model which you want to use',['AdaBoost Regressor','Random Forest Regressor','Bagging Regressor','AdaBoost Regressor 2'])
 
 #importing models
-ada_model = pickle.load(open('adadt.pkl','rb'))
-rf_model = pickle.load(open('adadt.pkl','rb'))
-bg_model = pickle.load(open('adadt.pkl','rb'))
+ada_model = pickle.load(open('adaboost.pkl','rb'))
+rf_model = pickle.load(open('randomforest.pkl','rb'))
+bg_model = pickle.load(open('bagging.pkl','rb'))
 adt_model = pickle.load(open('adadt.pkl','rb'))
 
 if option=='AdaBoost Regressor':
