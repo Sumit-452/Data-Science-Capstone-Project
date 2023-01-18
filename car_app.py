@@ -5,6 +5,8 @@ import streamlit as st
 import numpy as np
 
 st.sidebar.title('model selection')
+adaboost = pickle.load(open('best_model.pkl','rb'))
+st.sidebar.radio([adaboost])
 
 st.title('CAR SELLING PRICE PREDICTION')
 n=np.zeros([1,34],dtype=int)
@@ -114,7 +116,7 @@ else:
 
   
 
-model = pickle.load(open('best_model.pkl','rb'))
+
 if(st.button('Submit')):
   result = model.predict(n)
   st.text("estimate selling price is :")
