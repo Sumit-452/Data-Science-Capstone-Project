@@ -6,7 +6,7 @@ import numpy as np
 
 st.sidebar.title('model selection')
 adaboost = pickle.load(open('best_model.pkl','rb'))
-st.sidebar.radio([adaboost])
+model=st.sidebar.radio('Select the ML model which you want to use',adaboost)
 
 st.title('CAR SELLING PRICE PREDICTION')
 n=np.zeros([1,34],dtype=int)
