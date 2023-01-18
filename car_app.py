@@ -14,12 +14,12 @@ km = st.slider("Enter km driven",1000,1000000,5000)
 n[0,0]=km
 
 
-year = st.slider("Select Year",1,25)
+year = st.slider("Select Year(old)",1,25,5)
 n[0,1]=year
 
 
 #for fuel
-fuel = st.selectbox("fuel: ",
+fuel = st.selectbox("Fuel: ",
                      ['Diesel','Petrol','CNG','LPG','Electric'])
 
 if fuel=='CNG':
@@ -35,7 +35,7 @@ else:
   
   
 #for seller type
-s_t = st.radio("select seller type: ",
+s_t = st.radio("Select Seller Type: ",
                      ('Individual','Dealer','Trustmark Dealer'))
 if s_t=='Dealer':
   n[0,7]=1
@@ -46,7 +46,7 @@ else:
   
 
 #for owner
-owner = st.selectbox("owner: ",
+owner = st.selectbox("Owner: ",
                      ['First Owner','Second Owner','Third Owner','Fourth & Above Owner','Test Drive Car'])
 
 if owner=='First Owner':
@@ -72,7 +72,7 @@ else:
   
   
 #for manufacturer
-man = st.selectbox("manufacturer: ",['Maruti','Hyundai','Mahindra','Tata','Ford','Honda','Toyota','Chevrolet','Renault',
+man = st.selectbox("Select car Manufacturer: ",['Maruti','Hyundai','Mahindra','Tata','Ford','Honda','Toyota','Chevrolet','Renault',
                       'Volkswagen','Nissan','Skoda','Fiat','Audi','Datsun','BMW','Mercedes-Benz'])
 
 if man=='Audi':
