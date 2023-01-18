@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 
-st.title('car prediction model')
+st.title('CAR SELLING PRICE PREDICTION')
 n=np.zeros([1,34],dtype=int)
 
 
