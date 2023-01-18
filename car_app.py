@@ -112,7 +112,7 @@ else:
 
   
 
-model = pickle.load(open('best_model.pkl','rb'))
+model = pickle.load(open('demo.pkl','rb'))
 if(st.button('Submit')):
   result = model.predict(n)
   st.text("estimate selling price s :")
