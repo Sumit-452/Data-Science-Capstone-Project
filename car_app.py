@@ -114,11 +114,14 @@ elif man=='Toyota':
 else:
   n[0,33]=1
 
+#making a Dataframe using array n
+data=pd.DataFrame(n)
+  
   
 ada_model = pickle.load(open('best_model.pkl','rb'))
 if option=='AdaBoost':
   model=ada_model
 if(st.button('Submit')):
-  result = model.predict(n)
+  result = model.predict(data)
   st.text("estimate selling price is :")
   st.success(result[0])
