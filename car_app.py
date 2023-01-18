@@ -115,5 +115,5 @@ else:
 model = pickle.load(open('best_model.pkl','rb'))
 if(st.button('Submit')):
   result = model.predict(n)
-  st.text("estimate selling price s :",result)
+  st.text("estimate selling price s :")
   st.success(result)
