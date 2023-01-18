@@ -20,6 +20,7 @@ for i in q:
       df.drop(j,inplace=True)
 df.drop_duplicates(inplace=True)
 
+#converting years into years old column
 df['years_old']=2023-df['year']
 df['years_old']
 df.drop(columns=['name','year'],axis=1,inplace=True)
