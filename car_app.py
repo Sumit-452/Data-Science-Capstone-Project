@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 
-st.sidebar.title('model selection')
+st.sidebar.title('MODEL SELECTION')
 
 option=st.sidebar.radio('Select the Machine Learning model which you want to use',['AdaBoost Regressor','Random Forest Regressor','Bagging Regressor','AdaBoost Regressor 2'])
 st.sidebar.text('**leave this to default for best result**')
@@ -31,7 +31,7 @@ n=np.zeros([1,34],dtype=int)
 
 #taking input and storing data
 
-km = st.slider("Enter total kilometer driven",0,1000000,)
+km = st.slider("Select total kilometer driven",0,1000000,)
 n[0,0]=km
 
 
