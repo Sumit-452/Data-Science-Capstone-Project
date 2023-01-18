@@ -18,13 +18,12 @@ for i in q:
     w=df[df['manufacturer']==i].index
     for j in list(w):
       df.drop(j,inplace=True)
-df.drop_duplicates(inplace=True)
 
 #converting years into years old column
 df['years_old']=2023-df['year']
 df['years_old']
 df.drop(columns=['name','year'],axis=1,inplace=True)
-
+df.drop_duplicates(inplace=True)
 
 
 
@@ -35,9 +34,6 @@ df=pd.get_dummies(data=df,columns=['fuel','seller_type','owner','transmission','
 x=df.drop(columns=['selling_price'],axis=1)
 y=df['selling_price']
 
-#sclarization
-from sklearn.preprocessing import StandardScaler,MinMaxScaler
-xmm = MinMaxScaler().fit_transform(x)
 
 
 # model building
@@ -45,7 +41,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import AdaBoostRegressor
 
 ad=AdaBoostRegressor(base_estimator=DecisionTreeRegressor())
-ad.fit(xmm,y)
+ad.fit(x,y)
 
 #model saving
 import pickle
