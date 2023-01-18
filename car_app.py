@@ -24,7 +24,7 @@ n[0,1]=year
 
 #for fuel
 fuel = st.selectbox("Fuel: ",
-                     ['Diesel','Petrol','CNG','LPG','Electric'])
+                     ['Petrol','Diesel','CNG','LPG','Electric'])
 
 if fuel=='CNG':
   n[0,2]=1
