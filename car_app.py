@@ -66,7 +66,7 @@ else:
   
   
 # for transmission
-tran = st.radio("Select Transmission: ", ('Automatic', 'Manual'))
+tran = st.radio("Select Transmission: ", ('Manual','Automatic'))
 
 
 if tran=='Automatic':
