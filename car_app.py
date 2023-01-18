@@ -10,11 +10,11 @@ n=np.zeros([1,34],dtype=int)
 
 #taking input and storing data
 
-km = st.slider("Enter km driven",1000,1000000,5000)
+km = st.slider("Enter total kilometer driven",1,1000000,5000,step=100)
 n[0,0]=km
 
 
-year = st.slider("Select Year(old)",1,25,5)
+year = st.slider("Select Year(old)",1,30,5)
 n[0,1]=year
 
 
