@@ -121,4 +121,4 @@ if option=='AdaBoost':
 if(st.button('Submit')):
   result = model.predict(n)
   st.text("estimate selling price is :")
-  st.success(result)
+  st.success(result[0])
