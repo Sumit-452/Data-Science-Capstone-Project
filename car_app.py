@@ -140,6 +140,3 @@ if(st.button('Submit')):
   result = model.predict(data)
   st.text("estimate selling price is :")
   st.success(result[0])
-  
-  
-st.text(model.score())
