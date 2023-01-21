@@ -7,7 +7,7 @@ import numpy as np
 st.sidebar.title('MODEL SELECTION')
 
 option=st.sidebar.radio('Select the Machine Learning model which you want to use',['AdaBoost Regressor','Random Forest Regressor','Bagging Regressor','AdaBoost Regressor 2'])
-st.sidebar.text('<marquee>**leave this to default for best result**</marquee>')
+st.sidebar.text('**leave this to default for best result**')
 #importing models
 ada_model = pickle.load(open('adaboost.pkl','rb'))
 rf_model = pickle.load(open('randomforest.pkl','rb'))
