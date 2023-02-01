@@ -18,7 +18,6 @@ df['manufacturer']=lst
 d1=df['manufacturer'].value_counts()
 w=d1[d1.values<10].index
 q=list(w)
-q
 
 for i in q:
     w=df[df['manufacturer']==i].index
